@@ -1,0 +1,68 @@
+<!doctype html>	
+<html>	
+    <head>	  
+        <title>Code Player</title>	 
+        <meta charset="utf-8" />	  
+       
+        <meta name="viewport" content="width=device-width, initial-scale=1" />	        	       
+        <!-- Start Bluggins -->
+        <script type="text/javascript" src="Bluggins/JQuery.js"></script>
+ 
+        <script type="text/javascript" src="Bluggins/UI/jquery-ui.js"></script>	   
+        
+        <script src="Bluggins/bluggin.js"></script>
+        <!-- End Bluggins -->
+
+        
+        <!-- Start StyleSheets-->
+         <link rel="stylesheet" href="Bluggins/UI/jquery-ui.css">
+        
+        <link rel="stylesheet" href="style/style.css">
+        
+        <!-- End StyleSheets-->
+    </head>	    	  
+    
+    <body>	  
+        <div id="wrapper">
+            <div id="menuBar">
+                <div id="logo">
+                    CodePlayer
+                </div>
+                
+                <div id="btnDiv">
+                    <button id="runBtn">Run</button>
+                </div>  
+                
+                <ul id="toggles">
+                    <li class="toggle selected">HTML</li>
+                    <li class="toggle">CSS</li>
+                    <li class="toggle">JS</li>
+                    <li class="toggle selected "style="border-right:none">Result</li>
+                </ul>
+            </div>
+            
+            <div class="Container">
+                <div class="codeContainer selectedDiv" id="HTMLContainer">
+                    <textarea id="htmlCode"><div id="test">Test</div></textarea>
+                    <span class="containerTitle">HTML</span>
+                </div>
+                <!--***************************-->
+                <div class="cssContainer" id="CSSContainer"> 
+                    <textarea id="cssCode"></textarea>
+                <span class="containerTitle">   Css</span>
+                </div> 
+                <!--***************************-->
+                <div class="jsContainer" id="JSContainer"> 
+                    <textarea id="jsCode">document.getElementById("test").innerHTML = "working";</textarea>
+                    <span class="containerTitle">JS</span>
+                </div>
+                <!--***************************-->
+                <div class="resultContainer selectedDiv" id="ResultContainer"> 
+                    <iframe id="resultIframe">Result</iframe>
+                    <span class="containerTitle">Result</span>
+                </div>
+            </div>
+            
+        </div>
+    </body>	
+</html>
